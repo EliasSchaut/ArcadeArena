@@ -1,21 +1,15 @@
 extends Objective
 
-const dot_scene = preload("res://scenes/heros/abilities/pacman_dot.tscn")
+const DOT_CELL_SCENE_SOURCE_ID := 1
 
-@onready var marker_collection := $Marker
-@onready var dot_collection := $Dots
-@onready var dots_count: int
+@onready var tile_map = $TileMapLayer
+@onready var dots_count: int = 0
 
 func _ready() -> void:
-	var markers: Array[Node] = marker_collection.get_children()
-	dots_count = markers.size()
-
-	for i in range(dots_count):
-		var dot = dot_scene.instantiate()
-		dot.name = "Dot " + str(i)
-		dot.position = markers[i].position
-		dot.collected.connect(_on_dot_collected)
-		dot_collection.add_child(dot)
+	for cell in tile_map.get_used_cells_by_id(DOT_CELL_SCENE_SOURCE_ID):
+		var tile = tile_map.get_cell_alternative_tile(cell)
+		print(tile)
+		# var scene = tile.get_scene()
 
 func _on_dot_collected():
 	dots_count -= 1

@@ -1,10 +1,10 @@
 [gd_scene load_steps=4 format=3 uid="uid://dd554xi1vy573"]
 
 [ext_resource type="Script" path="res://scripts/heros/pacman_dot.gd" id="1_bgy5t"]
-[ext_resource type="Texture2D" uid="uid://chskjbjwm1j82" path="res://assets/sprites/dot.png" id="1_lixgp"]
+[ext_resource type="Texture2D" uid="uid://b3fg0j75c4ft4" path="res://assets/sprites/dot.png" id="1_lixgp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_jsepu"]
-radius = 33.0606
+radius = 8.0
 
 [node name="PacmanDot" type="Node2D"]
 script = ExtResource("1_bgy5t")

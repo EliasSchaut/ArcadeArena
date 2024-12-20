@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=4 uid="uid://cowlhswqdprqj"]
+
+[ext_resource type="PackedScene" uid="uid://c31qh40i0noll" path="res://scenes/objective/tetris/tetris_block.tscn" id="1_7c8mp"]
+
+[node name="TetrisT" instance=ExtResource("1_7c8mp")]
+
+[node name="TileMapLayer" parent="." index="0"]
+tile_map_data = PackedByteArray("AAD+////AAABAAAAAAACAAAAAAACAAIAAAACAP//AAACAAAAAAABAAAAAAABAAIAAAABAP//AAABAAAAAAAAAAAAAAABAAIAAAAAAP//AAABAAEAAAD//wAAAAABAAIAAAD/////AAABAAEAAAD+/wAAAAABAAIAAAD9/wAAAAAAAAIAAAD9////AAAAAAAAAAAAAP3/AAACAAAAAAD///7/AAAAAAEAAAD///3/AAAAAAAAAAAAAP7/AAACAAEAAAD+//7/AQAAAAAAAQD+/wEAAQAAAAAAAQABAAEAAQAAAAAAAQABAP7/AQAAAAAAAQA=")

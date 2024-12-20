@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_gujc3"]
 [ext_resource type="PackedScene" uid="uid://htnjbif5war8" path="res://scenes/ui.tscn" id="2_wdq2r"]
-[ext_resource type="PackedScene" uid="uid://c31qh40i0noll" path="res://scenes/objective/tetris_block.tscn" id="3_34emw"]
+[ext_resource type="PackedScene" uid="uid://cowlhswqdprqj" path="res://scenes/objective/tetris/tetris_t.tscn" id="4_fbpgd"]
 [ext_resource type="PackedScene" uid="uid://byubeo3xbf7nf" path="res://scenes/heros/pacman.tscn" id="4_xnch4"]
 
 [node name="Main" type="Node2D"]
@@ -10,8 +10,11 @@ script = ExtResource("1_gujc3")
 
 [node name="UI" parent="." instance=ExtResource("2_wdq2r")]
 
-[node name="Tetris" parent="." instance=ExtResource("3_34emw")]
-position = Vector2(504, 234)
-
 [node name="Hero" parent="." instance=ExtResource("4_xnch4")]
 position = Vector2(124, 485)
+
+[node name="TetrisT" parent="." instance=ExtResource("4_fbpgd")]
+position = Vector2(465, 339)
+health = 0.0
+damage = 0.0
+score_reward = 0

@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bn75m61548186" path="res://scenes/heros/hero.tscn" id="1_uv0u0"]
 [ext_resource type="Script" path="res://scripts/heros/pacman.gd" id="2_crhyd"]
-[ext_resource type="Texture2D" uid="uid://chskjbjwm1j82" path="res://assets/sprites/dot.png" id="3_3pkct"]
+[ext_resource type="Texture2D" uid="uid://7ag4178n67kw" path="res://assets/sprites/pacman.png" id="3_upb2x"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lh65w"]
-radius = 32.1403
+radius = 16.0
 
 [node name="PacMan" instance=ExtResource("1_uv0u0")]
 collision_layer = 7
@@ -14,7 +14,7 @@ script = ExtResource("2_crhyd")
 health = 3.0
 
 [node name="Sprite2D" parent="." index="0"]
-texture = ExtResource("3_3pkct")
+texture = ExtResource("3_upb2x")
 
 [node name="CollisionShape2D" parent="." index="1"]
 shape = SubResource("CircleShape2D_lh65w")

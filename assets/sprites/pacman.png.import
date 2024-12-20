@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3fg0j75c4ft4"
-path="res://.godot/imported/dot.png-754133d30f5a097cee6aa50b47cfb99e.ctex"
+uid="uid://7ag4178n67kw"
+path="res://.godot/imported/pacman.png-db83d352383ded3a7ecf49331dc32f14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/dot.png"
-dest_files=["res://.godot/imported/dot.png-754133d30f5a097cee6aa50b47cfb99e.ctex"]
+source_file="res://assets/sprites/pacman.png"
+dest_files=["res://.godot/imported/pacman.png-db83d352383ded3a7ecf49331dc32f14.ctex"]
 
 [params]
 

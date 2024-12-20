@@ -1,4 +1,4 @@
-extends Node2D
+class_name PacManDot extends Node2D
 
 signal collected
 
